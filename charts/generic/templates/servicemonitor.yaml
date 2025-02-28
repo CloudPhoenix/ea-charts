@@ -10,7 +10,7 @@ metadata:
 {{- if .Values.serviceMonitor.additionalLabels }}
 {{ toYaml .Values.serviceMonitor.additionalLabels | indent 4 }}
 {{- end }}
-{{- if or .Values.serviceMonitor.annotations .Values.forecastle.enabled }}
+{{- if .Values.serviceMonitor.annotations }}
   annotations:
 {{- end }}
 {{- if or .Values.serviceMonitor.annotations }}
