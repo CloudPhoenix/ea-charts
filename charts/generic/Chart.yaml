@@ -1,5 +1,5 @@
 apiVersion: v2
-name: application
+name: generic
 description: Generic helm chart for EURA apps
 type: application
 version: 1.0.0
