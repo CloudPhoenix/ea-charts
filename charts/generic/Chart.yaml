@@ -1,0 +1,17 @@
+apiVersion: v2
+name: application
+description: Generic helm chart for EURA apps
+type: application
+version: 1.0.0
+keywords:
+  - java
+  - node
+  - dotnet
+  - kubernetes
+  - application
+home: https://github.com/CloudPhoenix/ea-helm
+maintainers:
+  - name: Gabriele Turelli (ext)
+    email: g.turelli@cloudphoenix.it
+  - name: Dario Emerson Di Sante (ext)
+    email: d.disante@cloudphoenix.it
