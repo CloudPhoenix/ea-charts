@@ -11,6 +11,7 @@ metadata:
 {{- if or .Values.deployment.annotations .Values.deployment.reloadOnChange }}
   annotations:
 {{- end }}
+    rollme: {{ randAlphaNum 5 | quote }}
 {{- if .Values.deployment.annotations }}
 {{ toYaml .Values.deployment.annotations | indent 4 }}
 {{- end }}

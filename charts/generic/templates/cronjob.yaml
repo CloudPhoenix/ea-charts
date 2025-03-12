@@ -17,6 +17,7 @@ metadata:
   annotations:
 {{ $job.annotations | indent 4 }}
 {{- end }}
+    rollme: {{ randAlphaNum 5 | quote }}
   name: {{ $name }}
   namespace: {{ template "application.namespace" $ }}
 spec:
