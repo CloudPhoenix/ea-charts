@@ -17,7 +17,6 @@ metadata:
   annotations:
 {{ $job.annotations | indent 4 }}
 {{- end }}
-    rollme: {{ randAlphaNum 5 | quote }}
   name: {{ $name }}
   namespace: {{ template "application.namespace" $ }}
 spec:
@@ -54,6 +53,7 @@ spec:
           {{- with $job.additionalPodAnnotations }}
           annotations: {{ toYaml . | nindent 12 }}
           {{- end }}
+            rollme: {{ randAlphaNum 5 | quote }}
         spec:
           {{- if $.Values.rbac.enabled }}
           {{- if $.Values.rbac.serviceAccount.name }}

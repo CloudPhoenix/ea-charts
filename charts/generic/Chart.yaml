@@ -2,7 +2,7 @@ apiVersion: v2
 name: generic
 description: Generic helm chart for EURA apps
 type: application
-version: 1.0.3
+version: 1.0.4
 keywords:
   - java
   - node
